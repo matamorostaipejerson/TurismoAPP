@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_tourism"
+        android:title="Turismo"
+        android:icon="@drawable/ic_turismo"/>
+
+    <item
+        android:id="@+id/nav_Hotels"
+        android:title="Hoteles"
+        android:icon="@drawable/ic_hotel"/>
+
+    <item
+        android:id="@+id/fab"
+        android:title=""
+        android:enabled="false"/>
+
+    <item
+        android:id="@+id/nav_Restaurants"
+        android:title="Restaurantes"
+        android:icon="@drawable/ic_restaurant"/>
+
+    <item
+        android:id="@+id/nav_mapa"
+        android:title="Mapa"
+        android:icon="@drawable/ic_mapa"/>
+
+</menu>

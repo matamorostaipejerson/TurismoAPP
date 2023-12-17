@@ -1,0 +1,216 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".Home.FragmentHeader.SettingFragment">
+
+        <TextView
+            android:id="@+id/ic_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTUALIZAR USUARIO"
+            android:gravity="center"
+            android:textColor="@color/divider"
+            android:padding="12dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilName"
+            style="@style/FormTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:textColorHint="@color/title_text"
+            app:layout_constraintBottom_toTopOf="@+id/tilSurnames"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ic_usuario">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nombreSetting"
+                style="@style/FormEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/ic_acount"
+                android:hint="Ingrese su nombre"
+                android:imeOptions="actionNext"
+                android:textColor="@color/todo_subtitle_text"
+                android:textColorHighlight="@color/error_dark"
+                android:textColorHint="@color/error_dark" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilSurnames"
+            style="@style/FormTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/title_text"
+            app:layout_constraintBottom_toTopOf="@+id/tilUser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/apellidoSetting"
+                style="@style/FormEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/ic_acount"
+                android:hint="ingrese sus apellidos"
+                android:imeOptions="actionNext"
+                android:textColor="@color/todo_subtitle_text"
+                android:textColorHighlight="@color/error_dark"
+                android:textColorHint="@color/error_dark" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilUser"
+            style="@style/FormTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/title_text"
+            app:layout_constraintBottom_toTopOf="@+id/tilEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilSurnames">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usuarioSetting"
+                style="@style/FormEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/ic_acount"
+                android:hint="Nombre de Usuario"
+                android:imeOptions="actionNext"
+                android:textColor="@color/todo_subtitle_text"
+                android:textColorHighlight="@color/error_dark"
+                android:textColorHint="@color/error_dark" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmail"
+            style="@style/FormTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/title_text"
+            app:layout_constraintBottom_toTopOf="@+id/tilPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilUser">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/correoSetting"
+                style="@style/FormEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/ic_email"
+                android:hint="Ingrese su correo"
+                android:imeOptions="actionNext"
+                android:inputType="textWebEmailAddress"
+                android:textColor="@color/todo_subtitle_text"
+                android:textColorHighlight="@color/error_dark"
+                android:textColorHint="@color/error_dark" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            style="@style/FormTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/title_text"
+            app:layout_constraintBottom_toTopOf="@+id/tverror"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contrasenaSetting"
+                style="@style/FormEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/ic_password"
+                android:hint="Ingrese su contraseña"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:textColor="@color/todo_subtitle_text"
+                android:textColorHighlight="@color/error_dark"
+                android:textColorHint="@color/error_dark" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tverror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/input_error"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilPassword" />
+
+        <ProgressBar
+            android:id="@+id/Loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardarSetting"
+            style="@style/PrimaryButton"
+            android:layout_width="320dp"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="60dp"
+            android:text="Actualizar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilPassword"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEliminarSetting"
+            style="@style/PrimaryButton"
+            android:layout_width="320dp"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="15dp"
+            android:text="eliminar mi cuenta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnGuardarSetting"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

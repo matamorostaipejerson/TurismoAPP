@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "130135519247",
+    "firebase_url": "https://comentarios-127e5-default-rtdb.firebaseio.com",
+    "project_id": "comentarios-127e5",
+    "storage_bucket": "comentarios-127e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130135519247:android:99e0cb60f3299d7806f37a",
+        "android_client_info": {
+          "package_name": "com.example.turismopampas_hhh"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2OVfh8HxTypKAk6rYD1A5a45Ohf0IefI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

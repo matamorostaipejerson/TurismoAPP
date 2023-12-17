@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="16dp"
+    tools:context=".Home.FragmentHeader.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Turismo Pampas"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/descripcion_about_titlulo"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="8dp"
+                android:src="@drawable/pillo_tres" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="8dp"
+                android:src="@drawable/tabla_uno" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="8dp"
+                android:src="@drawable/lagu_uno" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="8dp"
+                android:src="@drawable/yauri_uno" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Nuestros Servicios"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Plasmar tus experiencias en la caja de comentarios"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Ver Lugares de Interés en Mapa y llegar mediante un indicador"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Subir imágenes para tener un recuerdo de lo vivido"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewPolicies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Políticas"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewPrivacyPolicyContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text='En "Turismo Pampas", reconocemos la importancia de proteger la privacidad de la información personal de nuestros usuarios. Esta Política de Privacidad describe cómo recopilamos, utilizamos, divulgamos y protegemos la información que recopilamos.\n\nRecopilación de Información:\nRecopilamos información personal cuando usted se registra en nuestra plataforma, utiliza nuestros servicios o interactúa con nosotros. Esta información puede incluir, entre otros, su nombre, dirección de correo electrónico, información de contacto y preferencias.\n\nUso de la Información:\nLa información recopilada se utiliza para personalizar su experiencia, proporcionarle servicios solicitados, mejorar nuestros productos y servicios, y comunicarnos con usted sobre actualizaciones, promociones o noticias relevantes.\n\nDivulgación de Información:\nNo compartimos su información personal con terceros, excepto cuando sea necesario para proporcionarle servicios solicitados o cumplir con requisitos legales.\n\nSeguridad de la Información:\nNos comprometemos a proteger la seguridad de su información personal y utilizamos medidas de seguridad adecuadas para salvaguardarla contra accesos no autorizados, uso indebido o divulgación.\n\nCambios en la Política de Privacidad:\nPodemos actualizar esta Política de Privacidad ocasionalmente. Le recomendamos revisar esta página periódicamente para estar al tanto de cualquier cambio.\n\nAl utilizar nuestros servicios, usted acepta el tratamiento de su información personal según lo establecido en esta Política de Privacidad.'
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

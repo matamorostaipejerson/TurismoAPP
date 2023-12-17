@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    tools:context=".Home.Dialog.DialogActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+        android:id="@+id/icCarucel"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/icCarucel"
+        android:gravity="center"
+        android:text="nombre hotel"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tvUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvNombre"
+        android:text="ubicacion Hotel"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ButtonMaps"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvUbicacion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="@color/teal_700"
+        android:drawableRight="@drawable/ic_send"
+        android:text="ir a mapa" />
+
+
+</RelativeLayout>

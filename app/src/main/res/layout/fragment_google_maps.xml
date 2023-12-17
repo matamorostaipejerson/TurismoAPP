@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.FragmentFoot.MapsFragment">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Home.FragmentFoot.Mapa.GoogleMapsFragment"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/btnOptions"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnRuta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_route"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcular Ruta"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/btnDistancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_room"/>
+            <TextView
+                android:id="@+id/txtDistancia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distancia"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/btnCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_card"/>
+            <TextView
+                android:id="@+id/txtCad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiempo"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/btnRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_run"/>
+            <TextView
+                android:id="@+id/txtRun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiempo"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/btnByker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bike"/>
+            <TextView
+                android:id="@+id/txtByker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiempo"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/BtnExplore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="457dp"
+            android:src="@drawable/ic_explore"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnExploreOptions"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LUGARES"
+                    android:textStyle="bold"/>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnYauricocha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:text="Yauricocha"/>
+
+                    <Button
+                        android:id="@+id/btnQhapaq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Qhapaq Ñan"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnTablachaca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:text="Tablachaca"/>
+
+                    <Button
+                        android:id="@+id/btnPillo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pillo"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnCataratas"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cataratas"/>
+                </TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOTELES"
+                    android:textStyle="bold"/>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnPlaza"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Plaza"/>
+
+                    <Button
+                        android:id="@+id/btnConfort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D'Confort"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnJardin"
+                        android:text="Jardin"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnAngeles"
+                        android:text="Angeles"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnSurge"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Surge"/>
+
+                    <Button
+                        android:id="@+id/btnBlue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blue"/>
+                </TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RESTAURANTES"
+                    android:textStyle="bold"/>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnDnofox"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Dnofox"/>
+
+                    <Button
+                        android:id="@+id/btnTaya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taya"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnGondolas"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Gondolas"/>
+
+                    <Button
+                        android:id="@+id/btnGruta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="La Gruta"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnYonatans"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Yonatans"/>
+
+                    <Button
+                        android:id="@+id/btnTayata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tayata"/>
+                </TableRow>
+            </TableLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
